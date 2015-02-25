@@ -1,0 +1,47 @@
+#hero_container{
+  background-image: url("../img/lorenzo_coding_640.png");
+  height: 500px;
+}
+
+#hero_container h1 {
+  top: 80px;
+}
+
+#hero_container #partnerlogos {
+  top: 300px;
+}
+
+#content_container{
+  margin: 20px auto;
+}
+
+#intro_copy {
+  width: 90%;
+  margin: 0 5%;
+  padding: 20px 0;
+}
+
+#intro_img {
+  display: none;
+}
+
+#lightbulb, #microphone {
+  width: 90%;
+  margin: 0 5%;
+}
+
+#to {display: none;}
+
+#sponsors a {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#footerphoto { display:none; }
+
+#footerphotocredits h2 {
+  font-size: .85em;
+  font-family: "Roboto Slab", Helvetica;
+  text-transform: none;
+}

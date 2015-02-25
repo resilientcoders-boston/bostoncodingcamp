@@ -1,16 +1,16 @@
-<?php $photopassword = 'codecomplete'; 
+<?php $photopassword = 'codecomplete';
 
 
 ###############################################################
 # Page Password Protect 2.13
 ###############################################################
 # Visit http://www.zubrag.com/scripts/ for updates
-############################################################### 
+###############################################################
 #
 # Usage:
 # Set usernames / passwords below between SETTINGS START and SETTINGS END.
 # Open it in browser with "help" parameter to get the code
-# to add to all files being protected. 
+# to add to all files being protected.
 #    Example: password_protect.php?help
 # Include protection string which it gave you into every file that needs to be protected
 #
@@ -100,9 +100,10 @@ function showLoginPasswordProtect($error_msg) {
 ?>
 <html>
 <head>
-  <title>Resilient Coders</title>
+  <title>Boston Coding Camp</title>
   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
   <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link rel="shortcut icon" href="/img/favicon.png" />
 </head>
 <body>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -121,19 +122,22 @@ function showLoginPasswordProtect($error_msg) {
 				formsubmit();
 			});
 			function formsubmit(){
-			$("#login").submit();	
+			$("#login").submit();
 			}
-	});	
+	});
 	</script>
-	
-	
+
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+
 	 <style>
 	* {margin:0; padding:0;}
 
 	body {
 			text-align:center;
 			margin: 0 auto;
-			font: 100 1em Helvetica ;
+			font-family: "Roboto Slab", Helvetica ;
 		  background-image: url(https://delmarsenties.s3.amazonaws.com/resilient/codingcamp/leanstartup_codingcamp.png);			background-repeat: no-repeat;
 			background-attachment: fixed;
 			-webkit-background-size: cover;
@@ -141,15 +145,19 @@ function showLoginPasswordProtect($error_msg) {
 			-o-background-size: cover;
 			background-size: cover;
 		}
-		
+
 	.clr { clear:both; }
-	
+
+  p {color: white; text-align: left; }
+
+  p a {color: #222; text-decoration:none; }
+
 	.password_container {
 		width:430px;
 		text-align:center;
 		margin:350px auto 0 auto;
 	}
-	
+
 	.password_error {
 		color: red;
 	}
@@ -165,8 +173,8 @@ function showLoginPasswordProtect($error_msg) {
 	-moz-appearance: textfield;
 	background-color: white;
 	border:none;
-	border-radius: 4px; 
-	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-webkit-rtl-ordering: logical;
 	-webkit-user-select: text;
@@ -199,19 +207,17 @@ function showLoginPasswordProtect($error_msg) {
 		padding: 0 0 0 16px;
 		cursor:pointer;
 		color:#666;
-		box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .2);
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		background-color: #f6f4f4;
-		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
-		background-image: -moz-linear-gradient(0% 100% 90deg, #efefef, #fff);
-		background-image: -o-linear-gradient(90deg, #fff, #efefef);
 		border:none;
-		border-radius: 4px; 
-		-moz-border-radius: 4px; 
+		border-radius: 4px;
+		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
-		font: 100 1em Helvetica ;
+    font-family: "Roboto Slab", Helvetica;
+    font-size: .8em;
 	}
+
 	input.chatbox {
 	        border: 0 none;
 	        height: 0;
@@ -221,26 +227,28 @@ function showLoginPasswordProtect($error_msg) {
 	        margin: 0;
 	        overflow: hidden;
 	}
-	
+
 	.nda {
 		font-size: .65em;
 	}
-	
+
 	.nda a {
 		font-weight: bold;
 		color: #222;
 	}
 	  </style>
-	
+
 <!--[if ie]>
 <style>.password_container input.submit {margin-top:15px;}</style>
 <![endif]-->
+
+
   <div class="password_container">
   <form method="post" id="login">
-    
-	
-	
-	
+
+
+
+
     <p class="password_error"><?php echo $error_msg; ?></p>
 
 
@@ -249,9 +257,11 @@ function showLoginPasswordProtect($error_msg) {
 	<input type="password" class="password" onfocus="this.value=''; this.onfocus=null;" />
 	<input class="chatbox"  type="password" name="access_password" />
 	<input class="submit" name="Submit" value="Submit" />
-	
+
   </form>
 <div class="clr"></div>
+<p>To learn about sponsorship opportunities, email David at
+  <a href="mailto:david@resilientcoders.org" target="_blank">david@resilientcoders.org.</a>
   </div>
 </body>
 </html>
@@ -268,14 +278,14 @@ if (isset($_POST['access_password'])) {
   $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';
   $pass = $_POST['access_password'];
   if (!USE_USERNAME && !in_array($pass, $LOGIN_INFORMATION)
-  || (USE_USERNAME && ( !array_key_exists($login, $LOGIN_INFORMATION) || $LOGIN_INFORMATION[$login] != $pass ) ) 
+  || (USE_USERNAME && ( !array_key_exists($login, $LOGIN_INFORMATION) || $LOGIN_INFORMATION[$login] != $pass ) )
   ) {
     showLoginPasswordProtect("Nope. Give it another shot.");
   }
   else {
     // set cookie if password was validated
     setcookie("verify", md5($login.'%'.$pass), $timeout, '/');
-    
+
     // Some programs (like Form1 Bilder) check $_POST array to see if parameters passed
     // So need to clear password protector variables
     unset($_POST['access_login']);

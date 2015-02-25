@@ -16,36 +16,38 @@
     <title>Boston Coding Camp</title>
     <meta charset='utf-8' />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="http://delmarsenties.s3.amazonaws.com/resilient/favicon.gif" />
+<link rel="shortcut icon" href="/img/favicon.png" />
     <script src='slides_orig.js' type='text/javascript'></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body style='display: none'>
-  
+    <?php /* include_once("../includes/nav.php") */ ?>
+
+
   <!-- <div class="roadblock"><p>This works best in Firefox!</p></div> -->
     <section class='slides layout-regular template-default'>
       <!-- Your slides (<article>s) go here. Delete or comment out the slides below. -->
       <article>
-		<h2>April 20-24, 2015</h2>
-       <h1>Boston.Coding.Camp.</h1>
-		<h2>Microsoft N.E.R.D. Center</h2>
+
+       <img src="/img/BCC_white.png" class="logo" />
       </article>
 
 		<article>
 			<h1>Introducing Boston Coding Camp</h1>
 			<p class="intro" >
-				5 full days, from April 20th to the 24th. 3 speakers. 20 urban youth learning to code, at Microsoft N.E.R.D. And 1 demo day, during which they show the tech community what they've done. This is the first annual free alternative spring break, run jointly by <a  href="http://resilientcoders.org" title="Resilient Coders" target="_blank">Resilient Coders</a> and <a href="http://typp.org" title="The Young People's Project" target="_blank">the Young People's Project.</a> </p>
-				
+				5 full days, from April 20th to the 24th. 3 speakers. 25 young people from underserved communities learning to code, at Microsoft N.E.R.D. And 1 demo day, during which they show the tech community what they've done. This is the first annual free alternative spring break, run jointly by <a  href="http://resilientcoders.org" title="Resilient Coders" target="_blank">Resilient Coders</a> and <a href="http://typp.org" title="The Young People's Project" target="_blank">the Young People's Project.</a> </p>
+
 			<p class="intro" style="border:none;">
 					Help us spread tech literacy throughout Boston.
 			</p>
 		</article>
-	  
+
       <article>
         <h1>
           Who We Are
         </h1>
-	
+
 		<div class="left45">
 			<h2>Resilient Coders</h2>
 			<p>
@@ -54,7 +56,8 @@
 		</div>
 		<div class="right45">
 			<h2>Young People's Project</h2>
-			<p><a href="http://typp.org" target="_blank" title="Young People's Project">YPP</a> uses Math Literacy Work to develop the abilities of elementary through high school students to succeed in school and in life, and in doing so involves them in efforts to eliminate institutional obstacles to their success. 
+			<p><a href="http://typp.org" target="_blank" title="Young People's Project">YPP</a> uses Math Literacy Work to develop the abilities of elementary through high school students to succeed in school and in life, and in doing so involves them in efforts to eliminate institutional obstacles to their success.
+        YPP trains high school and college students as Math Literacy Workers (MLWs), who subsequently teach math-based activities to younger children in their neighborhoods and communities.
 			</p>
 		</div>
       </article>
@@ -99,15 +102,9 @@ Taught himself how to code at the age of 12. Discovered he loved it and couldnâ€
 		<!-- 	<img src="https://delmarsenties.s3.amazonaws.com/resilient/codingcamp/photos/timwright.jpeg" /> -->
 			<p>
 				Tim Wright is a frequent speaker, blogger, teacher, and published author. He has written articles for <a href="http://alistapart.com/author/timwright12" target="_blank">A List Apart,</a> <a href="http://coding.smashingmagazine.com/author/tim-wright/" target="_blank">Smashing Magazine,</a> <a href="http://www.sitepoint.com/author/tim-wright/" target="_blank">Sitepoint,</a> and <a href="http://www.webdesignerdepot.com/2009/06/10-tips-to-create-a-more-usable-web/" target="_blank">Web Designer Depot</a> on topics ranging from CSS techniques to environmental design. However, he is most well-known for his mastery of JavaScript, as he authored the go-to manual, <a href="http://www.amazon.com/Learning-JavaScript-Hands-On-Fundamentals-Modern/dp/0321832744/" target="_blank">Learning JavaScript: A Hands-On Guide to the Fundamentals of Modern JavaScript.</a><br /><br />
-Tim is a passionate web accessibility advocate, demonstrating how significantly you can enhance user experiences by exposing accessibility features.
 			</p>
 		</div>
-		<div class="right28">
-			<h2>Surprise Demo Day Speaker</h2>
-			<p>
-				Here's some text about our Demo Day speaker 
-			</p>
-		</div>
+
       </article>
 
 
@@ -121,7 +118,7 @@ Tim is a passionate web accessibility advocate, demonstrating how significantly 
 		<h2>Thanks to your support...</h2>
 		<div class="left45">
 			<ul>
-				<li>20 students will learn HTML/CSS on our laptops</li>
+				<li>25 students will learn HTML/CSS on our laptops</li>
 				<li>5 student coders will be employed to mentor their peers</li>
 				<li>We will offer free daily breakfast and lunch</li>
 			</ul>
@@ -133,26 +130,26 @@ Tim is a passionate web accessibility advocate, demonstrating how significantly 
 				<li>Participants will earn their Boston Coding Camp t-shirts</li>
 			</ul>
 		</div>
-		
+
       </article>
-	  
-	
+
+
 	<article>
         <h1>
           Sponsorship Opportunities
         </h1>
-		
-		<div class="left28">
+
+		<div class="left45">
 			<h2>Gold - $10,000</h2>
 			<ul>
 				<li>Full page color ad in program</li>
 				<li>Prominent mention in press release</li>
 				<li>Prominent logo placement on event website</li>
-				<li>Title signage during Demo Day</li>
+				<li>Signage during Demo Day</li>
 				<li>Recognition onstage during Demo Day</li>
 			</ul>
 		</div>
-		<div class="left28">
+		<div class="left45">
 			<h2>Silver - $5,000</h2>
 			<ul>
 				<li>Signage during Demo Day</li>
@@ -161,14 +158,7 @@ Tim is a passionate web accessibility advocate, demonstrating how significantly 
 				<li>Organizational logo on event website</li>
 			</ul>
 		</div>
-		<div class="right28">
-			<h2>Bronze - $2,500</h2>
-			<ul>
-				<li>Quarter page color ad in program</li>
-				<li>Acknowledgement in press release</li>
-				<li>Organizational logo on event website</li>
-			</ul>
-		</div>
+
       </article>
 
 		<article style="text-align:center;">
@@ -189,7 +179,7 @@ Tim is a passionate web accessibility advocate, demonstrating how significantly 
 				</p>
 			</div>
 			<div class="right45">
-				
+
 				<h2>Chad Milner</h2>
 				<img src="https://delmarsenties.s3.amazonaws.com/resilient/codingcamp/photos/chadmilner.png" />
 				<p style="text-align: center;">
@@ -201,41 +191,9 @@ Tim is a passionate web accessibility advocate, demonstrating how significantly 
 				</p>
 			</div>
 		</article>
-  
-	
-	<?php 
-	/*
-	SUMMER BOOTCAMP
-	***************
-	My time
-	40hrs * $75/hr * 4wks = $12,000
-	Interns
-	40hrs * $20/hr * 4wks = $3,200
-	Student mentors
-	40hrs * $12/hr * 4wks * 2 students = $3,840
-	Total === $19,040	
-	
-	POPUP
-	******
-	My time
-	8hrs * $75 = $600
-	
-	SCHOOL YEAR
-	************
-	1st employee = $40,000
-	
-	FULL YEAR
-	*********
-	Me = $70,000
-	One employee = $60,000
-	Student mentors = $3,840
-			
-	*/
-	?>
-	
-	
-	
-		
+
+
+
     </section>
   </body>
 </html>

@@ -3,7 +3,7 @@
 
   Authors: Luke Mahé (code)
            Marcin Wichary (code and design)
-           
+
            Dominic Mazzoni (browser compatibility)
            Charles Chen (ChromeVox support)
 
@@ -14,15 +14,15 @@
 
 @font-face {
     font-family: 'league gothic';
-    src: url('../f/LeagueGothic.otf');
+    src: url('../fonts/LeagueGothic.otf');
 }
 @font-face {
     font-family: 'brix';
-    src: url('../f/BrixSlab-Medium.otf');
+    src: url('../fonts/BrixSlab-Medium.otf');
 }
 @font-face {
     font-family: 'carton';
-    src: url('../f/Carton-Slab.otf');
+    src: url('../fonts/Carton-Slab.otf');
 }
 
 @import url(http://fonts.googleapis.com/css?family=Lato:900|Bitter);
@@ -40,7 +40,7 @@ body {
 
   height: 100%;
   min-height: 740px;
-  
+
   overflow-x: hidden;
   overflow-y: auto;
 	background-position: center center;
@@ -49,13 +49,23 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-a { 
-	text-decoration: none; 
-	color: #19b6ea; 
+a {
+	text-decoration: none;
+	color: #19b6ea;
 	}
-a:hover { 
-	color: #b6280b; 
+a:hover {
+	color: #b6280b;
 	}
+
+img {width: 200px;}
+
+img.logo {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  width: 300px;
+  margin-left: -150px;
+}
 
 .left45, .right45 {display:block; float: left; width: 45%;}
 .left45 { margin: 0 2% 0 0;}
@@ -70,7 +80,7 @@ a:hover {
   height: 100%;
   left: 0;
   top: 0;
-  
+
   position: absolute;
 
   -webkit-transform: translate3d(0, 0, 0);
@@ -105,7 +115,7 @@ a:hover {
 
   margin-left: -450px;
   margin-top: -350px;
-  
+
   padding: 40px 60px;
 
   box-sizing: border-box;
@@ -125,11 +135,10 @@ a:hover {
   -webkit-transition: -webkit-transform .3s ease-out;
 }
 
-img {width:200px;}
 
 
 p, li {
-	font-family: bold "Roboto Slab", serif; 
+	font-family: bold "Roboto Slab", serif;
 color: #666;
   margin: 2em 0 0 0;
   text-align: left;
@@ -159,8 +168,8 @@ h2 {
 	margin: 1em 0 .6em 0;
 }
 
-p.intro { 
-	font-family: bold "Roboto Slab", serif; 
+p.intro {
+	font-family: bold "Roboto Slab", serif;
 	font-size: 1.4em;
 	color: #666;
 	padding: 1.2em 0;
@@ -169,7 +178,7 @@ p.intro {
 	text-align: center;
 }
 
-/* 
+/*
 **********
 .bg_blue
 **********
@@ -184,7 +193,7 @@ p.intro {
 	color: rgb(104, 103, 65);
 }
 
-/* 
+/*
 **********
 .bg_red
 **********
@@ -199,7 +208,7 @@ p.intro {
 	color: white;
 }
 
-/* 
+/*
 **********
 color
 **********
@@ -215,7 +224,7 @@ color
 .slides.layout-faux-widescreen > article {
   margin-left: -550px;
   width: 1100px;
-  
+
   padding: 40px 160px;
 }
 
@@ -232,14 +241,14 @@ color
   /* left: 0; */
   top: 0;
   width: 150px;
-  height: 700px;  
+  height: 700px;
   /*left: 50%; */
   top: 50%;
-  cursor: pointer;  
-  margin-top: -350px;  
+  cursor: pointer;
+  margin-top: -350px;
 background-repeat: no-repeat;
 background-size: 50px auto;
-  
+
   tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
@@ -388,8 +397,6 @@ ul ul {
 li {
   padding: 0;
   margin: 0;
-
-  margin-bottom: .5em;
 }
 li::before {
   content: '·';
@@ -406,7 +413,7 @@ pre {
   font-size: 20px;
   line-height: 28px;
   padding: 5px 10px;
-  
+
   letter-spacing: -1px;
 
   margin-top: 40px;
@@ -416,7 +423,7 @@ pre {
   background: rgb(240, 240, 240);
   border: 1px solid rgb(224, 224, 224);
   box-shadow: inset 0 2px 6px rgba(0, 0, 0, .1);
-  
+
   overflow: hidden;
 }
 
@@ -501,9 +508,9 @@ th {
   left: 60px;
   top: 644px;
   padding-right: 175px;
-  
+
   font-size: 15px;
-  letter-spacing: 0;  
+  letter-spacing: 0;
   line-height: 18px;
 }
 
@@ -511,39 +518,39 @@ q {
   display: block;
   font-size: 60px;
   line-height: 72px;
-  
+
   margin-left: 20px;
-  
+
   margin-top: 100px;
-  margin-right: 150px;    
+  margin-right: 150px;
 }
 q::before {
   content: '“';
-  
+
   position: absolute;
   display: inline-block;
   margin-left: -2.1em;
   width: 2em;
   text-align: right;
-  
+
   font-size: 90px;
   color: rgb(192, 192, 192);
 }
 q::after {
   content: '”';
 
-  position: absolute;  
+  position: absolute;
   margin-left: .1em;
 
   font-size: 90px;
-  color: rgb(192, 192, 192);  
+  color: rgb(192, 192, 192);
 }
 div.author {
-  text-align: right;  
+  text-align: right;
   font-size: 40px;
-  
+
   margin-top: 20px;
-  margin-right: 150px;    
+  margin-right: 150px;
 }
 div.author::before {
   content: '—';
@@ -593,27 +600,27 @@ article.smaller q::after {
 
 .prettyprint .str, /* string content */
 .prettyprint .atv { /* a markup attribute value */
-  color: rgb(0, 138, 53); 
-}  
+  color: rgb(0, 138, 53);
+}
 .prettyprint .kwd, /* a keyword */
 .prettyprint .tag { /* a markup tag name */
   color: rgb(0, 102, 204);
 }
 .prettyprint .com { /* a comment */
-  color: rgb(127, 127, 127); 
-  font-style: italic; 
-}  
+  color: rgb(127, 127, 127);
+  font-style: italic;
+}
 .prettyprint .lit { /* a literal value */
   color: rgb(127, 0, 0);
-}  
+}
 .prettyprint .pun, /* punctuation, lisp open bracket, lisp close bracket */
-.prettyprint .opn, 
-.prettyprint .clo { 
-  color: rgb(127, 127, 127); 
+.prettyprint .opn,
+.prettyprint .clo {
+  color: rgb(127, 127, 127);
 }
 .prettyprint .typ, /* a type name */
-.prettyprint .atn, /* a markup attribute name */ 
-.prettyprint .dec, 
+.prettyprint .atn, /* a markup attribute name */
+.prettyprint .dec,
 .prettyprint .var { /* a declaration; a variable name */
   color: rgb(127, 0, 127);
-}  
+}

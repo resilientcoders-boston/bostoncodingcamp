@@ -1,0 +1,109 @@
+
+#hero_container{
+  background-image: url("../img/lorenzo_coding2.png");
+  background-attachment: fixed;
+  height: 680px;
+}
+
+#hero_container h1 {
+  top: 250px;
+}
+
+#hero_container h2 {
+  margin: 0 auto;
+text-align: center;
+position: relative;
+bottom: -450px;
+color: white;
+font-size: 1.8em;
+}
+
+#hero_container #partnerlogos {
+  top: 500px;
+}
+
+#content_container{
+  margin: 100px auto;
+}
+
+#intro_img {
+  width: 40%;
+  height: 400px;
+  float: left;
+  display: block;
+  border-right: 4px solid #fff;
+  background-image: url("../img/micah_grovehall.jpg");
+  background-attachment: cover;
+  background-repeat: no-repeat;
+}
+
+#intro_copy {
+  width: 54%;
+  padding: 60px 0;
+}
+
+
+#lightbulb, #microphone {
+  background-size: 15% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 45%;
+  float: left;
+  padding: 80px 0 0 0;
+}
+
+#lightbulb, #microphone p { text-align: justify; }
+
+#lightbulb{
+background-image: url("../img/lightbulb.png");
+}
+
+#to{
+  width: 10%;
+  float: left;
+}
+
+#to img {
+  width: 100%;
+}
+
+#microphone{
+  background-image: url("../img/microphone.png");
+}
+
+#sponsors a {
+  float: left;
+  width: 100%;  /* Change as we start getting more sponsors */
+  text-align: center;
+  margin: 40px 0;
+}
+
+#footerphoto{
+  height:400px;
+  width:100%;
+  margin: 0 auto;
+  float: left;
+  display: block;
+  background-image:url("../img/FooterPhoto.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center ;
+}
+
+#footerphotocredits h2 {
+  color: white;
+  margin-top: -300px;
+  font-size: 2em;
+}
+
+
+/*
+===========
+TABLET ONLY
+===========
+*/
+
+@media screen and (max-width: 1024px) {
+
+}
