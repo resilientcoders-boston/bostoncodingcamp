@@ -36,7 +36,7 @@
 		<article>
 			<h1>Introducing Boston Coding Camp</h1>
 			<p class="intro" >
-				5 full days, from April 20th to the 24th. 3 speakers. 25 young people from underserved communities learning to code, at Microsoft N.E.R.D. And 1 demo day, during which they show the tech community what they've done. This is the first annual free alternative spring break, run jointly by <a  href="http://resilientcoders.org" title="Resilient Coders" target="_blank">Resilient Coders</a> and <a href="http://typp.org" title="The Young People's Project" target="_blank">the Young People's Project.</a> </p>
+				5 full days, from April 20th to the 24th. 3 speakers. 25 young people from underserved communities learning to code, at Hack/Reduce in Kendall Square. And 1 demo day, during which they show the tech community what they've done. This is the first annual free alternative spring break, run jointly by <a  href="http://resilientcoders.org" title="Resilient Coders" target="_blank">Resilient Coders</a> and <a href="http://typp.org" title="The Young People's Project" target="_blank">the Young People's Project.</a> </p>
 
 			<p class="intro" style="border:none;">
 					Help us spread tech literacy throughout Boston.
@@ -159,7 +159,7 @@ Taught himself how to code at the age of 12. Discovered he loved it and couldnâ€
 			</ul>
 		</div>
 
-      </article>
+    </article>
 
 		<article style="text-align:center;">
 			<h1>

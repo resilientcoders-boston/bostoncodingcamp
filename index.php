@@ -20,12 +20,9 @@
       <h2>#BOSCodingCamp</h2>
 
       <p>
-        <?php
-        date_default_timezone_set('UTC');
-        echo date('m\/d\/Y');
-        ?>
+
         This Spring Break, 25 young people from underserved communities will learn to code,
-        at the Microsoft NERD Center. Introducing Boston Coding Camp, a joint initiative of
+        at Hack/Reduce in Kendall Square. Introducing Boston Coding Camp, a joint initiative of
         <a href="http://typp.org" target="_blank" title="The Young People's Project">The Young People's Project</a>
         and <a href="http://resilientcoders.org" target="_blank" title="Resilient Coders">Resilient Coders.</a>
       </p>
@@ -58,7 +55,7 @@
         <div id="microphone">
           <h3>Demo Day</h3>
           <p>
-            Join us on Friday, April 24th, at 1pm, at the Microsoft NERD Center, to meet
+            Join us on Friday, April 24th, at 1pm, at Hack/Reduce, to meet
             the students and see them present their work. Each presentation will end
             with "Next Steps," during which the student will talk about what they want to
             do next with their websites.
@@ -78,8 +75,8 @@
 
     <div id="sponsors">
       <p>Boston Coding Camp is made possible by our sponsors:</p>
-      <a href="http://microsoft.com" title="Microsoft" target="_blank">
-        <img src="/img/microsoftLogo.jpeg" style="padding-top:12px;" />
+      <a href="http://tugg.org" title="Tech Underwriting Greater Good" target="_blank">
+        <img src="https://delmarsenties.s3.amazonaws.com/resilient/logos/tugg.png" style="padding-top:12px;" />
       </a>
     </div>
 
